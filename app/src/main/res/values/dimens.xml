@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- 默认按钮的圆角大小 -->
+    <dimen name="button_round_size">5dp</dimen>
+
+</resources>

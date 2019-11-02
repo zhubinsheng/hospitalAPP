@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/line2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@mipmap/doctor"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tvname2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/line2"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/line2"
+            android:text="挂号成功"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvname2"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/line2"
+            android:text="订单编号:2930393039"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/line2"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/line2"
+            android:text="呼吸科"
+            android:textColor="@color/gray" />
+
+
+        <Button
+            android:id="@+id/b4"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="取消挂号" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/abl_test_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:elevation="0dp">
+
+            <com.hjq.demo.widget.XCollapsingToolbarLayout
+                android:id="@+id/ctl_test_bar"
+                android:layout_width="match_parent"
+                android:layout_height="59dp"
+                app:contentScrim="@color/white"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed"
+                app:scrimVisibleHeightTrigger="@dimen/space_200">
+
+                <com.youth.banner.Banner
+                    android:id="@+id/banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:scaleType="centerCrop" />
+
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/t_test_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    android:layout_marginRight="20dp"
+                    app:layout_collapseMode="pin" />
+
+                <com.hjq.bar.TitleBar
+                    android:id="@+id/tb_test_a_bar"
+                    android:layout_width="match_parent"
+                    android:layout_height="?android:attr/actionBarSize"
+                    app:backButton="false"
+                    app:barStyle="transparent"
+                    app:layout_collapseMode="pin">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal"
+                        android:padding="@dimen/space_20">
+
+                        <TextView
+
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="@dimen/space_40"
+                            android:layout_marginRight="@dimen/space_100"
+                            android:background="@drawable/bg_home_search_bar_transparent"
+                            android:gravity="center"
+                            android:text="选择科室"
+                            android:textSize="@dimen/font_size_40px" />
+
+                    </LinearLayout>
+
+                </com.hjq.bar.TitleBar>
+
+            </com.hjq.demo.widget.XCollapsingToolbarLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="28dp"
+                    android:text="当前选择医院：" />
+
+                <TextView
+                    android:id="@+id/hospitalname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="医院" />
+            </LinearLayout>
+
+            <ListView
+                android:id="@+id/tv_test_search"
+                android:layout_width="match_parent"
+                android:layout_height="678dp" />
+
+        </android.support.design.widget.AppBarLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+include ':app', ':xbanner'
+include ':base'
+include ':dialog'
+include ':widget'
+include ':image'
+include ':umeng'

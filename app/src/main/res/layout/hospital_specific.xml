@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".ui.activity.LoginActivity">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/tb_login_title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/space_100"
+        app:backButton="false"
+        app:barStyle="transparent"
+        app:rightColor="@color/colorAccent"
+
+        app:title="" />
+
+    <ImageView
+        android:layout_width="@dimen/space_200"
+        android:layout_height="@dimen/space_200"
+        android:layout_margin="@dimen/space_60"
+        android:src="@mipmap/ic_logo" />
+
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_marginLeft="@dimen/space_80"
+        android:layout_marginRight="@dimen/space_80" />
+
+    <View
+        style="@style/HorizontalLineStyle"
+        android:layout_marginLeft="@dimen/space_80"
+        android:layout_marginRight="@dimen/space_80" />
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="医院介绍："
+            android:textSize="@dimen/font_size_30px" />
+
+        <TextView
+            android:textSize="@dimen/font_size_30px"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="三甲医院 先进技术" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/ToOfficeWebsite"
+        android:layout_width="match_parent"
+        android:layout_height="46dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="44dp"
+            android:text="医院官网："
+            android:textSize="@dimen/font_size_30px" />
+
+        <TextView
+            android:textSize="@dimen/font_size_30px"
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="www.baidu.com" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/ToMap"
+        style="@style/ButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/space_80"
+        android:layout_marginTop="@dimen/space_60"
+        android:layout_marginRight="@dimen/space_80"
+        android:text="查看路线" />
+</LinearLayout>

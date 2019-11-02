@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/line1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@mipmap/doctor"
+            android:scaleType="centerCrop" />
+
+        <TextView
+            android:id="@+id/tvname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/line1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/line1"
+            android:text="黄医生"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/keshiname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvname"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/line1"
+            android:text="科室-儿童"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/introduce"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/line1"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/line1"
+            android:text="小儿,发烧,感冒发烧等"
+            android:textColor="@color/gray" />
+
+
+        <Button
+            android:id="@+id/b5"
+            style="@style/ButtonStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:text="点击预约" />
+    </RelativeLayout>
+    </LinearLayout>

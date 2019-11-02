@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.activity.SettingActivity">
+
+    <com.hjq.bar.TitleBar
+        android:id="@+id/tb_setting_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:title="个人信息" >
+
+    </com.hjq.bar.TitleBar>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.hjq.demo.widget.SettingBar
+
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_30"
+            app:bar_leftText="性名"
+
+            />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/space_30"
+            android:background="@color/colorPrimary"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.hjq.demo.widget.SettingBar
+
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_30"
+            app:bar_leftText="性别"
+
+            />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/space_30"
+            android:background="@color/colorPrimary"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.hjq.demo.widget.SettingBar
+
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_30"
+            app:bar_leftText="身份证号"
+
+            />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/space_30"
+            android:background="@color/colorPrimary"
+            android:gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.hjq.demo.widget.SettingBar
+            android:id="@+id/sb_setting_language"
+            android:layout_width="314dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/space_30"
+            app:bar_leftText="医保卡号"
+
+            />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="@dimen/space_30"
+            android:background="@color/colorPrimary"
+            android:gravity="center" />
+
+    </LinearLayout>
+</LinearLayout>
